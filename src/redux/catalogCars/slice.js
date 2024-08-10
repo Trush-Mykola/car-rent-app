@@ -22,6 +22,15 @@ const catalogCarSlice = createSlice({
         state.loadMoreVisible = false;
       }
     },
+    setFavoritesCars(state, action) {
+      state.favoritesCars = action.payload;
+    },
+    removeFavoriteCar: (state, action) => {
+      state.favoritesCars = state.favoritesCars.filter((car) => car._id !== action.payload._id);
+    },
+    getFavoritesCars(state) {
+      return state.favoritesCars;
+    },
   },
   extraReducers: (builder) =>
     builder
@@ -41,6 +50,6 @@ const catalogCarSlice = createSlice({
       }),
 });
 
-export const { setFavoritesCars, setLoadMoreCars } = catalogCarSlice.actions;
+export const { setFavoritesCars, setLoadMoreCars, removeFavoriteCar, getFavoritesCars } = catalogCarSlice.actions;
 
 export const catalogCarReducer = catalogCarSlice.reducer;

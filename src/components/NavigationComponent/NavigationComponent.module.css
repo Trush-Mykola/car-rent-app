@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  align-items: center;
+  gap: 50px;
+}
+.link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600px;
+}
+.active {
+  font-weight: bold;
+  color: #007bff;
+}

@@ -1,0 +1,140 @@
+.section {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 375px;
+}
+.container {
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.top {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.review {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  line-height: 1.5;
+}
+.reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.location {
+  line-height: 1.5;
+}
+.price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 24px;
+}
+.button {
+  position: absolute;
+  padding: 0;
+  top: 20px;
+  right: -11px;
+  background-color: transparent;
+  border: none;
+}
+.list {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-direction: column;
+}
+.img {
+  /* width: 290px; */
+  height: 310px;
+  border-radius: 10px;
+  object-fit: cover;
+  background-color: #f1f5f9;
+}
+.text {
+  color: #667085;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+.links {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 24px;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.line {
+  height: 1px;
+  background-color: #101828;
+  opacity: 0.2;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    max-width: 768px;
+  }
+  .list {
+    flex-direction: row;
+  }
+  .img {
+    width: 290px;
+    object-fit: cover;
+  }
+  .button {
+    top: 18px;
+    right: 18px;
+  }
+}
+@media screen and (min-width: 1340px) {
+  .section {
+    max-width: 1470px;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    padding: 40px;
+    max-width: 982px;
+  }
+  .button {
+    top: 36px;
+    right: 36px;
+  }
+}
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.modalContent {
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  width: 80%;
+  max-width: 982px;
+  max-height: 90vh; /* Обмеження висоти модального вікна */
+  overflow-y: auto; /* Дозволяє вертикальне прокручування */
+}

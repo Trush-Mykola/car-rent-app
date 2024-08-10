@@ -1,0 +1,33 @@
+.section {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 375px;
+}
+.container {
+  max-width: 100%;
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section {
+    max-width: 1470px;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    padding: 40px;
+    width: 982px;
+    display: flex;
+    flex-direction: row;
+  }
+}

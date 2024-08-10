@@ -1,0 +1,46 @@
+.reviews {
+  width: 100%;
+}
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.bubble {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f2f4f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bubbleName {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #e44848;
+}
+.name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #475467;
+}
+.review {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+@media screen and (min-width: 1440px) {
+  .reviews {
+    max-width: 430px;
+  }
+}

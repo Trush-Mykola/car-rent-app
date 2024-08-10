@@ -1,0 +1,27 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+.item p {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+}
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+.decor {
+  height: 1px;
+  background-color: #101828;
+  opacity: 0.2;
+  margin-bottom: 24px;
+}

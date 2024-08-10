@@ -10,14 +10,13 @@ import CarReviewsPage from "../../pages/CarReviewsPage/CarReviewsPage";
 
 const RoutesComponent = () => {
   return (
-    <main>
+    <main className="main">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/catalog" element={<CatalogPage />} />
         <Route path="/catalog/:id" element={<CarDetailsPage />}>
           <Route path="features" element={<CarFeaturesPage />} />
           <Route path="reviews" element={<CarReviewsPage />} />
-          {/* <Route path="*" element={<NotFoundPage />} /> */}
         </Route>
         <Route path="/favorites" element={<FavoritesPage />} />
         <Route path="*" element={<NotFoundPage />} />

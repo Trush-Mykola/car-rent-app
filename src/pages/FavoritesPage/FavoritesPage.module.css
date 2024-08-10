@@ -1,0 +1,24 @@
+.section {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section {
+    max-width: 1470px;
+    display: flex;
+  }
+}

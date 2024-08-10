@@ -1,0 +1,28 @@
+.section {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 375px;
+}
+.container {
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section {
+    max-width: 1470px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .container {
+    padding: 0;
+    width: 430px;
+  }
+}
