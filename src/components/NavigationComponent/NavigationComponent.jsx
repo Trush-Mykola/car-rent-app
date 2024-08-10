@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 const NavigationComponent = () => {
   return (
     <header>
-      NavigationComponent
+      <NavLink to="/">Home</NavLink>
       <NavLink to="/catalog">Catalog</NavLink>
-      <NavLink to="/favorites">Favourites</NavLink>
+      <NavLink to="/favorites">Favorites</NavLink>
     </header>
   );
 };
