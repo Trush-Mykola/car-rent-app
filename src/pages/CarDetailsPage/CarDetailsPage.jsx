@@ -54,7 +54,7 @@ const CarDetailsPage = () => {
                   <div className={css.reviews}>
                     <div>
                       <svg width="16" height="16" fill="#FFC531">
-                        <use href="/src/assets/svg/symbol-defs.svg#icon-Star"></use>
+                        <use href="/svg/symbol-defs.svg#icon-Star"></use>
                       </svg>
                     </div>
                     <p className={css.review}>
@@ -64,7 +64,7 @@ const CarDetailsPage = () => {
                   <div className={css.reviews}>
                     <div>
                       <svg width="16" height="16" stroke="black" fill="none">
-                        <use href="/src/assets/svg/symbol-defs.svg#icon-Location"></use>
+                        <use href="/svg/symbol-defs.svg#icon-Location"></use>
                       </svg>
                     </div>
                     <p className={css.location}>{carDetails.location.split(", ").reverse().join(", ")}</p>
@@ -73,7 +73,7 @@ const CarDetailsPage = () => {
                 <p className={css.price}>${carDetails.price}.00</p>
                 <button className={css.button} onClick={closeModal}>
                   <svg width="32" height="32" stroke="black">
-                    <use href="/src/assets/svg/symbol-defs.svg#icon-Close"></use>
+                    <use href="/svg/symbol-defs.svg#icon-Close"></use>
                   </svg>
                 </button>
                 <ul className={css.list}>
