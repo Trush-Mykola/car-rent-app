@@ -6,11 +6,12 @@ import CarsList from "../../components/CarsList/CarsList";
 import css from "./FavoritesPage.module.css";
 import { removeFavoriteCar, setFavoritesCars } from "../../redux/catalogCars/slice";
 import ErrorText from "../../components/ErrorText/ErrorText";
+import { selectFavoritesCars, selectIsError, selectIsLoading } from "../../redux/catalogCars/selectors";
 
 const FavoritesPage = () => {
-  const favCars = useSelector((state) => state.catalog.favoritesCars);
-  const isLoading = useSelector((state) => state.catalog.isLoading);
-  const isError = useSelector((state) => state.catalog.isError);
+  const favCars = useSelector(selectFavoritesCars);
+  const isLoading = useSelector(selectIsLoading);
+  const isError = useSelector(selectIsError);
   const dispatch = useDispatch();
   const handleToggleFavorite = (car) => {
     const isAlreadyFavorite = favCars.some((favCar) => favCar._id === car._id);

@@ -5,11 +5,12 @@ import css from "./CarFeaturesPage.module.css";
 import ReviewForm from "../../components/ReviewForm/ReviewForm";
 import CarFeatures from "../../components/CarFeatures/CarFeatures";
 import CarVehicleDetails from "../../components/CarVehicleDetails/CarVehicleDetails";
+import { selectCarDetails, selectCarDetailsIsError, selectCarDetailsIsLoading } from "../../redux/carDetails/carDetailsSelectors";
 
 const CarFeaturesPage = () => {
-  const carDetails = useSelector((state) => state.carDetails.carDetails);
-  const isLoading = useSelector((state) => state.carDetails.isLoading);
-  const isError = useSelector((state) => state.carDetails.isError);
+  const carDetails = useSelector(selectCarDetails);
+  const isLoading = useSelector(selectCarDetailsIsLoading);
+  const isError = useSelector(selectCarDetailsIsError);
 
   return (
     <>

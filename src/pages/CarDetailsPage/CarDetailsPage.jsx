@@ -6,11 +6,12 @@ import { fetchCarDetailsById } from "../../redux/carDetails/carDetailsOperations
 import Loader from "../../components/Loader/Loader";
 
 import css from "./CarDetailsPage.module.css";
+import { selectCarDetails, selectCarDetailsIsError, selectCarDetailsIsLoading } from "../../redux/carDetails/carDetailsSelectors";
 
 const CarDetailsPage = () => {
-  const carDetails = useSelector((state) => state.carDetails.carDetails);
-  const isLoading = useSelector((state) => state.carDetails.isLoading);
-  const isError = useSelector((state) => state.catalog.isError);
+  const carDetails = useSelector(selectCarDetails);
+  const isLoading = useSelector(selectCarDetailsIsLoading);
+  const isError = useSelector(selectCarDetailsIsError);
   const { id } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();

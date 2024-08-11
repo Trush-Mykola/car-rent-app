@@ -8,13 +8,14 @@ import Loader from "../../components/Loader/Loader";
 import CarsList from "../../components/CarsList/CarsList";
 
 import css from "./CatalogPage.module.css";
+import { selectDisplayedCars, selectFavoritesCars, selectIsError, selectIsLoading, selectLoadMoreVisible } from "../../redux/catalogCars/selectors";
 
 const CatalogPage = () => {
-  const displayedCars = useSelector((state) => state.catalog.displayedCars);
-  const favCars = useSelector((state) => state.catalog.favoritesCars);
-  const loadMoreVisible = useSelector((state) => state.catalog.loadMoreVisible);
-  const isLoading = useSelector((state) => state.catalog.isLoading);
-  const isError = useSelector((state) => state.catalog.isError);
+  const displayedCars = useSelector(selectDisplayedCars);
+  const favCars = useSelector(selectFavoritesCars);
+  const loadMoreVisible = useSelector(selectLoadMoreVisible);
+  const isLoading = useSelector(selectIsLoading);
+  const isError = useSelector(selectIsError);
 
   const dispatch = useDispatch();
 
