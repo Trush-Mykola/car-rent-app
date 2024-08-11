@@ -13,7 +13,7 @@ const CarsListItem = ({ car, isFavorite = null, onToggleFavorite }) => {
             <p className={css.price}>${car.price}.00</p>
             <button className={css.addBtn} onClick={() => onToggleFavorite(car)}>
               <svg width="24" height="24" stroke={isFavorite ? "none" : "#101828"} fill={isFavorite ? "#E44848" : "none"}>
-                <use href="/src/assets/svg/symbol-defs.svg#icon-Heart"></use>
+                <use href="/svg/symbol-defs.svg#icon-Heart"></use>
               </svg>
             </button>
           </div>
@@ -23,7 +23,7 @@ const CarsListItem = ({ car, isFavorite = null, onToggleFavorite }) => {
             <div className={css.third}>
               <div>
                 <svg width="16" height="16" fill="#FFC531">
-                  <use href="/src/assets/svg/symbol-defs.svg#icon-Star"></use>
+                  <use href="/svg/symbol-defs.svg#icon-Star"></use>
                 </svg>
               </div>
               <p className={css.review}>
@@ -33,7 +33,7 @@ const CarsListItem = ({ car, isFavorite = null, onToggleFavorite }) => {
             <div className={css.third}>
               <div>
                 <svg width="16" height="16" stroke="black" fill="none">
-                  <use href="./assets/svg/symbol-defs.svg#icon-Location"></use>
+                  <use href="/svg/symbol-defs.svg#icon-Location"></use>
                 </svg>
               </div>
               <p className={css.location}>{car.location.split(", ").reverse().join(", ")}</p>
@@ -44,7 +44,7 @@ const CarsListItem = ({ car, isFavorite = null, onToggleFavorite }) => {
             <li className={css.listItem}>
               <div>
                 <svg width="20" height="20" stroke="black">
-                  <use href="/src/assets/svg/symbol-defs.svg#icon-Users"></use>
+                  <use href="/svg/symbol-defs.svg#icon-Users"></use>
                 </svg>
               </div>
               <p className={css.listText}>{car.adults} adults</p>
@@ -52,7 +52,7 @@ const CarsListItem = ({ car, isFavorite = null, onToggleFavorite }) => {
             <li className={css.listItem}>
               <div>
                 <svg width="20" height="20" stroke="black" fill="none">
-                  <use href="/src/assets/svg/symbol-defs.svg#icon-Automatic"></use>
+                  <use href="/svg/symbol-defs.svg#icon-Automatic"></use>
                 </svg>
               </div>
               <p className={css.listText}>{car.transmission}</p>
@@ -60,7 +60,7 @@ const CarsListItem = ({ car, isFavorite = null, onToggleFavorite }) => {
             <li className={css.listItem}>
               <div>
                 <svg width="20" height="20" stroke="black">
-                  <use href="/src/assets/svg/symbol-defs.svg#icon-Fuel"></use>
+                  <use href="/svg/symbol-defs.svg#icon-Fuel"></use>
                 </svg>
               </div>
               <p className={css.listText}>{car.engine}</p>
@@ -68,7 +68,7 @@ const CarsListItem = ({ car, isFavorite = null, onToggleFavorite }) => {
             <li className={css.listItem}>
               <div>
                 <svg width="20" height="20" stroke="black" fill="none">
-                  <use href="/src/assets/svg/symbol-defs.svg#icon-Cutlery"></use>
+                  <use href="/svg/symbol-defs.svg#icon-Cutlery"></use>
                 </svg>
               </div>
               <p className={css.listText}>Kitchen</p>
@@ -76,7 +76,7 @@ const CarsListItem = ({ car, isFavorite = null, onToggleFavorite }) => {
             <li className={css.listItem}>
               <div>
                 <svg width="20" height="20" stroke="black" fill="none">
-                  <use href="/src/assets/svg/symbol-defs.svg#icon-Bed"></use>
+                  <use href="/svg/symbol-defs.svg#icon-Bed"></use>
                 </svg>
               </div>
               <p className={css.listText}>{car.details.beds} Beds</p>
@@ -84,7 +84,7 @@ const CarsListItem = ({ car, isFavorite = null, onToggleFavorite }) => {
             <li className={css.listItem}>
               <div>
                 <svg width="20" height="20" stroke="black">
-                  <use href="/src/assets/svg/symbol-defs.svg#icon-Air"></use>
+                  <use href="/svg/symbol-defs.svg#icon-Air"></use>
                 </svg>
               </div>
               <p className={css.listText}>AC</p>
