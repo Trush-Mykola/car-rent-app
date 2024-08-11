@@ -1,8 +1,21 @@
-# React + Vite
+# Car Rental Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a car rental application built with React and Redux, which allows users to browse through a catalog of cars, view detailed information about each car, and add cars to their favorites. The application also includes a modal feature to display car details and reviews, as well as functionality to close the modal via various interactions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Home Page**: Introduction to the car rental service.
+- **Catalog**: List of available cars for rent.
+- **Favorites**: View and manage your list of favorite cars.
+- **Modal Window**: View detailed information about each car, including features, reviews, and location in a modal, with scrollable content.
+- **Responsive Design**: The app is designed to be responsive and user-friendly across different devices.
+
+## Technologies Used
+
+- **React**: For building the user interface.
+- **Redux Toolkit**: For state management.
+- **React Router**: For handling routing within the application.
+- **clsx**: For managing CSS class names dynamically.
+- **Vercel**: For deployment.

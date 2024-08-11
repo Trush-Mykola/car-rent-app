@@ -33,7 +33,7 @@ const CarsListItem = ({ car, isFavorite = null, onToggleFavorite }) => {
             <div className={css.third}>
               <div>
                 <svg width="16" height="16" stroke="black" fill="none">
-                  <use href="/src/assets/svg/symbol-defs.svg#icon-Location"></use>
+                  <use href="./assets/svg/symbol-defs.svg#icon-Location"></use>
                 </svg>
               </div>
               <p className={css.location}>{car.location.split(", ").reverse().join(", ")}</p>
